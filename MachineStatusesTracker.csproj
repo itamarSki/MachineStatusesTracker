@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Logos\ON.png" />
+    <None Remove="Views\Logos\OFF.png" />
+    <None Remove="Views\Logos\MAINTENANCE.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Views\Logos\ON.png" />
+    <Resource Include="Views\Logos\OFF.png" />
+    <Resource Include="Views\Logos\MAINTENANCE.png" />
+  </ItemGroup>
+
+</Project>
